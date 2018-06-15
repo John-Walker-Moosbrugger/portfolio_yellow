@@ -1,0 +1,12 @@
+.mainTitle {
+    font-size: 6rem;
+    text-align: right;
+
+    &__white {
+        color: $color-white;
+    }
+
+    &__dark {
+        color: $color-grey-dark;
+    }
+}

@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #484848;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+  grid-template-rows: 85vh repeat(4, min-content); }
+
+.mainTitle {
+  font-size: 6rem;
+  text-align: right; }
+  .mainTitle__white {
+    color: #fff; }
+  .mainTitle__dark {
+    color: #484848; }
+
+.header {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(max-content, 11rem) [col-end]) [center-end] 1fr [full-end];
+  grid-gap: 3rem;
+  background-color: #e8cf5e; }
+  .header__title {
+    grid-column: col-start 1 / col-end 4;
+    justify-self: end;
+    align-self: center;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(4, minmax(10vh, min-content)); }
+  .header__image {
+    height: 85vh;
+    grid-column: col-start 5 / col-end 8; }

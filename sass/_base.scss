@@ -1,0 +1,42 @@
+//COLOR VALUES
+$color-primary: #e8cf5e;
+
+$color-grey-dark: #484848;
+
+$color-white: #fff;
+
+
+//FONT VARIABLES
+$font-primary:'Ubuntu', sans-serif;
+
+
+//HEADER HEIGHT
+$header-height: 85vh;
+
+
+//GLOBAL RESET
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-grey-dark;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
+    grid-template-rows: $header-height repeat(4, min-content);
+}
