@@ -1,0 +1,16 @@
+.buttonSquare,
+.buttonSquare:visited {
+    color: $color-grey-dark;
+    text-decoration: none;
+    background-color: $color-primary;
+    padding: 1.5rem;
+
+    text-transform: uppercase;
+    transition: ease-in-out .1s;
+}
+
+.buttonSquare:hover {
+    transform: translateY(-3px);
+    z-index: 1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+}

@@ -2,6 +2,7 @@
 $color-primary: #e8cf5e;
 
 $color-grey-dark: #484848;
+$color-grey-light: #EFEFEF;
 
 $color-white: #fff;
 
@@ -37,6 +38,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end];
-    grid-template-rows: $header-height repeat(4, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1fr [full-end];
+    grid-template-rows: $header-height repeat(2, min-content) repeat(4, minmax(85rem, min-content));
+    grid-column-gap: 3rem;
 }
