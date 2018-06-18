@@ -39,6 +39,6 @@ body {
 .container {
     display: grid;
     grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] 1fr [full-end];
-    grid-template-rows: $header-height repeat(2, min-content) repeat(4, minmax(85rem, min-content));
+    grid-template-rows: $header-height repeat(2, min-content) repeat(4, minmax(75rem, min-content));
     grid-column-gap: 3rem;
 }
