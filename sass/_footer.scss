@@ -1,0 +1,57 @@
+.footer {
+    grid-column: full-start / full-end;
+    background-color: $color-grey-dark;
+    color: white;
+
+    display: grid;
+    grid-template-columns: [full-start] 1fr [center-start] 110rem [center-end] 1fr [full-end];
+    grid-template-rows: min-content 3rem;
+
+    &__container {
+        padding: 8rem 0 2rem 0;
+        grid-column: center-start / center-end;
+        
+        display: grid;
+        grid-template-columns: [center-start] repeat(4, 1fr) [center-end];
+        grid-row-gap: 8rem;
+
+    }
+
+    &__stack {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3rem;
+        align-items: flex-start;
+    }
+
+    &__link,
+    &__link:visited {
+        text-decoration: none;
+        color: white;
+        transition: .2s all ease-in-out;
+        padding: .2rem 0;
+    }
+
+    &__link:hover {
+        color: $color-primary;
+
+    }
+
+    &__title {
+        margin-bottom: .8rem;
+    }
+
+    .copyright {
+        grid-column: center-start / center-end;
+        grid-row: 2;
+        text-align: center;
+    }
+}
+
+#contact {
+    border-left: 2px solid $color-white;
+}
+
+.contact__text {
+    padding: .2rem 0;
+}

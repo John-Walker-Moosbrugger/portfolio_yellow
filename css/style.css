@@ -17,8 +17,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] 1fr [stretch-start] 10rem [center-start] 110rem [center-end] 10rem [stretch-end] 1fr [full-end];
-  grid-template-rows: 85vh 15vh repeat(2, min-content) repeat(4, minmax(75rem, min-content));
+  grid-template-columns: [full-start] 1fr [stretch-start] 10rem [center-start] minmax(min-content, 110rem) [center-end] 10rem [stretch-end] 1fr [full-end];
+  grid-template-rows: 85vh 15vh repeat(2, min-content) repeat(4, minmax(75rem, 90vh));
   grid-column-gap: 3rem; }
 
 .mainTitle {
@@ -30,11 +30,11 @@ body {
     color: #484848; }
 
 .section__title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700; }
 
 .small__title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700; }
 
 .paragraph {
@@ -49,6 +49,14 @@ body {
 
 .buttonSquare {
   font-size: 1.6rem;
+  font-weight: 400; }
+
+.tiny__title {
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+.small_paragraph {
+  font-size: 1.35rem;
   font-weight: 400; }
 
 .header {
@@ -142,6 +150,54 @@ body {
 
 .portfolio__icon--off {
   background-image: url("../img/offbeat_icon.png"); }
+
+.portfolio__icon--concept {
+  background-image: url("../img/concept_icon.png"); }
+
+.portfolio__icon--hyperloop {
+  background-image: url("../img/hyperloop_icon.png"); }
+
+#fit_icon {
+  background-size: contain;
+  background-position: center center; }
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: #484848;
+  color: white;
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] 110rem [center-end] 1fr [full-end];
+  grid-template-rows: min-content 3rem; }
+  .footer__container {
+    padding: 8rem 0 2rem 0;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: [center-start] repeat(4, 1fr) [center-end];
+    grid-row-gap: 8rem; }
+  .footer__stack {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    align-items: flex-start; }
+  .footer__link, .footer__link:visited {
+    text-decoration: none;
+    color: white;
+    transition: .2s all ease-in-out;
+    padding: .2rem 0; }
+  .footer__link:hover {
+    color: #e8cf5e; }
+  .footer__title {
+    margin-bottom: .8rem; }
+  .footer .copyright {
+    grid-column: center-start / center-end;
+    grid-row: 2;
+    text-align: center; }
+
+#contact {
+  border-left: 2px solid #fff; }
+
+.contact__text {
+  padding: .2rem 0; }
 
 .navigation__checkbox {
   display: none; }
@@ -256,7 +312,7 @@ body {
   background-color: #e8cf5e;
   padding: 1.5rem;
   text-transform: uppercase;
-  transition: ease-in-out .1s;
+  transition: ease-in-out .2s;
   border-radius: 3px; }
 
 .buttonSquare:hover {

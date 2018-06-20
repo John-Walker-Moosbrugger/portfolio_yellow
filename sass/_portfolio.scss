@@ -68,10 +68,17 @@
     &--off {
         background-image: url("../img/offbeat_icon.png");
     }
+
+    &--concept {
+        background-image: url("../img/concept_icon.png")
+    }
     
+    &--hyperloop {
+        background-image: url("../img/hyperloop_icon.png")
+    }
 }
 
-// #cube {
-//     background-size: contain;
-//     background-position: center center;
-// }
+#fit_icon {
+    background-size: contain;
+    background-position: center center;
+}
