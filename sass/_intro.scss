@@ -1,28 +1,14 @@
-.intro {
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    grid-template-rows: repeat(2, min-content);
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
-    padding-top: 5rem;
-
-
-    &__title {
-        grid-column: 2 / 3;
-    }
-}
-
-
 .bullet {
 
     &__icon {
         width: 10rem;
         height: 10rem;
-        align-self: center;
+        align-self: start;
+        grid-column: stretch-start / center-start;
     }
 
     &__title {
-
+        
     }
 
     &__text {
@@ -32,16 +18,28 @@
 
 
 .intro {
-    grid-column: col-start 1 / col-end 4;
+    grid-column: stretch-start / stretch-end;
+    
+    display: grid;
+
+    grid-template-columns: [stretch-start] 10rem [center-start] 1fr [mid] 1fr [center-end] 10rem [stretch-end];
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 3rem;
+
+    &__title {
+        grid-column: center-start;
+        align-self: end;
+        margin-bottom: 3rem;
+    }
 
     &__image {
         display: grid;
         align-items: center;
 
-        grid-column: col-start 5 / col-end 8;
+        grid-column: mid / center-end;
+        grid-row: 1 / -1;
         
         position: relative;
-        padding-top: 8rem;
 
         &--src {
             max-width: 100%;
