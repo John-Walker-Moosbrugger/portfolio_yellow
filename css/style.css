@@ -25,9 +25,11 @@ body {
   font-size: 5rem;
   text-align: right; }
   .mainTitle__white {
-    color: #fff; }
+    color: #fff; 
+  }
   .mainTitle__dark {
-    color: #484848; }
+    color: #484848; 
+  }
 
 .section__title {
   font-size: 4rem;
@@ -69,9 +71,11 @@ body {
     align-self: center;
     display: grid;
     align-items: right;
-    grid-template-rows: repeat(4, minmax(10vh, min-content)); }
+    grid-template-rows: repeat(4, minmax(10vh, min-content)); 
+  }
   .header__image {
-    height: 85vh; }
+    height: 85vh; 
+  }
 
 .bullet__icon {
   width: 10rem;
@@ -88,16 +92,20 @@ body {
   .intro__title {
     grid-column: center-start;
     align-self: end;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem; 
+  }
   .intro__image {
     display: grid;
     align-items: center;
     grid-column: mid / center-end;
     grid-row: 1 / -1;
-    position: relative; }
+    position: relative; 
+  }
     .intro__image--src {
       max-width: 100%;
-      max-height: 100%; }
+      max-height: 100%; 
+  
+    }
 
 .quote {
   background-color: #484848;
@@ -110,7 +118,8 @@ body {
   .quote__text {
     color: #fff;
     grid-column: col-start 2 / col-end 7;
-    text-align: center; }
+    text-align: center; 
+  }
 
 .portfolio {
   grid-column: full-start / full-end;
@@ -119,31 +128,45 @@ body {
   grid-gap: 3rem; }
   .portfolio__icon {
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; 
+  }
     .portfolio__icon--dark {
       grid-column: full-start / col-end 4;
-      background-position: right; }
+      background-position: right; 
+  
+    }
     .portfolio__icon--light {
-      grid-column: col-start 5 / full-end; }
+      grid-column: col-start 5 / full-end; 
+  
+    }
   .portfolio__text {
-    align-self: center; }
+    align-self: center; 
+  }
     .portfolio__text--dark {
-      grid-column: col-start 5 / col-end 8; }
+      grid-column: col-start 5 / col-end 8; 
+  
+    }
     .portfolio__text--light {
-      grid-column: col-start 1 / col-end 4; }
+      grid-column: col-start 1 / col-end 4; 
+  
+    }
   .portfolio__dark {
-    background-color: #EFEFEF; }
+    background-color: #EFEFEF; 
+  }
 
 .description {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
   .description__title {
-    margin-bottom: -.5rem; }
+    margin-bottom: -.5rem; 
+  }
   .description__subtitle {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem; 
+  }
   .description__button {
-    margin-top: 4rem; }
+    margin-top: 4rem; 
+  }
 
 .portfolio__icon--cube {
   background-image: url("../img/cuberover_icon.png"); }
@@ -155,7 +178,8 @@ body {
   background-image: url("../img/concept_icon.png"); }
 
 .portfolio__icon--hyperloop {
-  background-image: url("../img/hyperloop_icon.png"); }
+  background-image: url("../img/hyperloop_icon.png");
+  background-position: center; }
 
 #fit_icon {
   background-size: contain;
@@ -173,25 +197,31 @@ body {
     grid-column: center-start / center-end;
     display: grid;
     grid-template-columns: [center-start] repeat(4, 1fr) [center-end];
-    grid-row-gap: 8rem; }
+    grid-row-gap: 8rem; 
+  }
   .footer__stack {
     display: flex;
     flex-direction: column;
     padding-left: 3rem;
-    align-items: flex-start; }
+    align-items: flex-start; 
+  }
   .footer__link, .footer__link:visited {
     text-decoration: none;
     color: white;
-    transition: .2s all ease-in-out;
-    padding: .2rem 0; }
+    transition: .1s all ease-in-out;
+    padding: .2rem 0; 
+  }
   .footer__link:hover {
-    color: #e8cf5e; }
+    color: #e8cf5e; 
+  }
   .footer__title {
-    margin-bottom: .8rem; }
+    margin-bottom: .8rem; 
+  }
   .footer .copyright {
     grid-column: center-start / center-end;
     grid-row: 2;
-    text-align: center; }
+    text-align: center; 
+  }
 
 #contact {
   border-left: 2px solid #fff; }
@@ -277,16 +307,20 @@ body {
     width: 2.5rem;
     height: 2px;
     background-color: #fff;
-    display: inline-block; }
+    display: inline-block; 
+  }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all .2s; 
+  }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -.8rem; 
+  }
   .navigation__icon::after {
-    top: .8rem; }
+    top: .8rem; 
+  }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
